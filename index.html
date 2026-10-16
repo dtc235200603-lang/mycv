@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CV cá nhân của Bùi Duy Quang">
+  <title>CV | Bùi Duy Quang</title>
+  <style>
+    :root {
+      --navy: #14263d;
+      --blue: #2878c8;
+      --pale: #eef4fa;
+      --ink: #263445;
+      --muted: #64748b;
+      --line: #dce5ef;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #e8edf3;
+      color: var(--ink);
+      font: 15px/1.65 "Segoe UI", Arial, sans-serif;
+    }
+    .page {
+      width: min(100% - 32px, 1000px);
+      margin: 32px auto;
+      background: white;
+      box-shadow: 0 18px 50px rgba(20, 38, 61, .13);
+      display: grid;
+      grid-template-columns: 310px 1fr;
+      min-height: 1100px;
+    }
+    aside {
+      background: var(--navy);
+      color: #f7faff;
+      padding: 38px 28px;
+    }
+    .avatar {
+      width: 118px; height: 118px;
+      margin: 0 auto 20px;
+      border: 3px solid #8fc5ff;
+      border-radius: 50%;
+      background: #294361;
+      display: grid; place-items: center;
+      font-size: 38px; font-weight: 800; letter-spacing: 2px;
+    }
+    .side-name { text-align: center; font-size: 23px; line-height: 1.25; margin: 0; }
+    .side-role { text-align: center; color: #9fcfff; margin: 10px 0 30px; font-weight: 600; }
+    .side-section { margin-top: 28px; }
+    .side-section h2, main h2 {
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-size: 14px;
+      margin: 0 0 14px;
+    }
+    .side-section h2 { color: #9fcfff; border-bottom: 1px solid #40536b; padding-bottom: 8px; }
+    .contact-item { margin: 10px 0; overflow-wrap: anywhere; }
+    .contact-item span { display: block; color: #9fb0c5; font-size: 12px; text-transform: uppercase; letter-spacing: .7px; }
+    .side-section p { margin: 8px 0; color: #e1eaf5; }
+    .skill { margin: 13px 0; }
+    .skill-label { display: flex; justify-content: space-between; font-size: 13px; }
+    .track { height: 6px; background: #40536b; border-radius: 20px; margin-top: 6px; overflow: hidden; }
+    .fill { height: 100%; background: #71b9ff; border-radius: 20px; }
+    main { padding: 45px 42px; }
+    .intro { border-bottom: 2px solid var(--blue); padding-bottom: 24px; margin-bottom: 28px; }
+    .eyebrow { color: var(--blue); text-transform: uppercase; letter-spacing: 2px; font-size: 12px; font-weight: 800; }
+    h1 { color: var(--navy); font-size: clamp(30px, 4vw, 42px); line-height: 1.12; margin: 8px 0 10px; }
+    .headline { color: var(--muted); font-size: 17px; margin: 0; }
+    main h2 { color: var(--navy); display: flex; align-items: center; gap: 10px; margin-bottom: 16px; }
+    main h2::before { content: ""; width: 5px; height: 20px; border-radius: 3px; background: var(--blue); }
+    section { margin: 26px 0; }
+    .summary { margin: 0; color: #465568; }
+    .entry { margin: 0 0 22px; padding-left: 17px; border-left: 2px solid var(--line); }
+    .entry h3 { margin: 0; font-size: 16px; color: #20334b; }
+    .meta { color: var(--blue); font-size: 13px; font-weight: 700; margin: 3px 0 8px; }
+    .entry p { margin: 6px 0; color: #526174; }
+    ul { padding-left: 19px; margin: 8px 0; color: #526174; }
+    li { margin: 4px 0; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 8px; }
+    .tag { background: var(--pale); color: #285b8d; border: 1px solid #d7e7f7; padding: 5px 10px; border-radius: 6px; font-size: 13px; }
+    .note { font-size: 12px; color: #7b8796; margin-top: 30px; }
+    @media (max-width: 720px) {
+      .page { grid-template-columns: 1fr; margin: 0; width: 100%; }
+      aside { padding: 30px 24px; }
+      main { padding: 32px 24px; }
+      .side-section { margin-top: 22px; }
+    }
+    @media print {
+      body { background: white; }
+      .page { width: 100%; margin: 0; box-shadow: none; }
+      @page { size: A4; margin: 10mm; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <aside>
+      <div class="avatar" aria-label="Chữ viết tắt BDQ">BDQ</div>
+      <h2 class="side-name">Bùi Duy Quang</h2>
+      <p class="side-role">Ứng viên Công nghệ thông tin</p>
+
+      <div class="side-section">
+        <h2>Thông tin liên hệ</h2>
+        <div class="contact-item"><span>Điện thoại</span>Điền số điện thoại</div>
+        <div class="contact-item"><span>Email</span>dien.email@example.com</div>
+        <div class="contact-item"><span>Địa chỉ</span>Thái Nguyên, Việt Nam</div>
+        <div class="contact-item"><span>GitHub / Portfolio</span>Thêm liên kết của bạn</div>
+      </div>
+
+      <div class="side-section">
+        <h2>Kỹ năng</h2>
+        <div class="skill"><div class="skill-label"><span>HTML &amp; CSS</span><span>Khá</span></div><div class="track"><div class="fill" style="width:72%"></div></div></div>
+        <div class="skill"><div class="skill-label"><span>JavaScript</span><span>Cơ bản</span></div><div class="track"><div class="fill" style="width:48%"></div></div></div>
+        <div class="skill"><div class="skill-label"><span>Cơ sở dữ liệu</span><span>Cơ bản</span></div><div class="track"><div class="fill" style="width:50%"></div></div></div>
+        <div class="skill"><div class="skill-label"><span>Git / GitHub</span><span>Cơ bản</span></div><div class="track"><div class="fill" style="width:45%"></div></div></div>
+      </div>
+
+      <div class="side-section">
+        <h2>Điểm mạnh</h2>
+        <p>• Ham học hỏi, chủ động</p>
+        <p>• Có tinh thần trách nhiệm</p>
+        <p>• Làm việc nhóm và tự học</p>
+        <p>• Sẵn sàng tiếp thu góp ý</p>
+      </div>
+
+      <div class="side-section">
+        <h2>Ngôn ngữ</h2>
+        <p>Tiếng Việt: Bản ngữ</p>
+        <p>Tiếng Anh: Điền trình độ thực tế</p>
+      </div>
+    </aside>
+
+    <main>
+      <header class="intro">
+        <div class="eyebrow">Curriculum Vitae</div>
+        <h1>DƯƠNG MẠNH CƯỜNG</h1>
+        <p class="headline">Sinh viên / Ứng viên ngành Công nghệ thông tin</p>
+      </header>
+
+      <section>
+        <h2>Giới thiệu bản thân</h2>
+        <p class="summary">Tôi là người yêu thích công nghệ và phát triển website, có tinh thần học hỏi và mong muốn vận dụng kiến thức vào các dự án thực tế. Tôi đang trau dồi kỹ năng lập trình, tư duy giải quyết vấn đề và quy trình làm việc để phát triển chuyên môn lâu dài.</p>
+      </section>
+
+      <section>
+        <h2>Mục tiêu nghề nghiệp</h2>
+        <div class="entry">
+          <h3>Ngắn hạn</h3>
+          <p>Củng cố kiến thức HTML, CSS, JavaScript, cơ sở dữ liệu và Git; hoàn thành các dự án cá nhân có giao diện rõ ràng, hoạt động ổn định.</p>
+        </div>
+        <div class="entry">
+          <h3>Dài hạn</h3>
+          <p>Phát triển thành lập trình viên web chuyên nghiệp, có khả năng xây dựng và bảo trì sản phẩm hoàn chỉnh, đồng thời đóng góp hiệu quả cho đội ngũ.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Học vấn</h2>
+        <div class="entry">
+          <h3>[Tên trường / cơ sở đào tạo]</h3>
+          <div class="meta">[Chuyên ngành] · [Năm bắt đầu – năm dự kiến tốt nghiệp]</div>
+          <p>Điền các môn học, thành tích hoặc chứng chỉ liên quan nếu có.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Dự án tiêu biểu</h2>
+        <div class="entry">
+          <h3>Website bán PC và linh kiện máy tính</h3>
+          <div class="meta">Dự án cá nhân / học tập · [Thời gian thực hiện]</div>
+          <ul>
+            <li>Xây dựng giao diện cửa hàng trực tuyến, danh sách sản phẩm và trang chi tiết sản phẩm.</li>
+            <li>Thiết kế luồng đăng nhập, phân quyền người dùng và quy trình mua hàng.</li>
+            <li>Tìm hiểu quản lý dữ liệu sản phẩm, giỏ hàng và thống kê bán hàng.</li>
+            <li>Công nghệ sử dụng: [Điền đúng công nghệ thực tế của dự án].</li>
+          </ul>
+        </div>
+        <div class="entry">
+          <h3>[Tên dự án khác nếu có]</h3>
+          <div class="meta">[Vai trò] · [Thời gian]</div>
+          <p>Mô tả ngắn mục tiêu, phần việc bạn phụ trách và kết quả đạt được.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Kỹ năng chuyên môn</h2>
+        <div class="tag-list">
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
+          <span class="tag">Responsive Design</span><span class="tag">Git / GitHub</span>
+          <span class="tag">SQL / Database</span><span class="tag">Debug cơ bản</span>
+        </div>
+        <p class="note">Lưu ý: Hãy chỉnh sửa các mục trong ngoặc vuông và thông tin liên hệ theo dữ liệu thực tế trước khi gửi CV.</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
