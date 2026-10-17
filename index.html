@@ -35,14 +35,16 @@
       color: #f7faff;
       padding: 38px 28px;
     }
-    .avatar {
-      width: 118px; height: 118px;
+    .avatar-img {
+      width: 118px;
+      height: 118px;
       margin: 0 auto 20px;
       border: 3px solid #8fc5ff;
       border-radius: 50%;
       background: #294361;
-      display: grid; place-items: center;
-      font-size: 38px; font-weight: 800; letter-spacing: 2px;
+      display: grid;
+      place-items: center;
+      object-fit: cover;
     }
     .side-name { text-align: center; font-size: 23px; line-height: 1.25; margin: 0; }
     .side-role { text-align: center; color: #9fcfff; margin: 10px 0 30px; font-weight: 600; }
@@ -79,6 +81,7 @@
     .tag-list { display: flex; flex-wrap: wrap; gap: 8px; }
     .tag { background: var(--pale); color: #285b8d; border: 1px solid #d7e7f7; padding: 5px 10px; border-radius: 6px; font-size: 13px; }
     .note { font-size: 12px; color: #7b8796; margin-top: 30px; }
+    .soft-skills { line-height: 1.8; }
     @media (max-width: 720px) {
       .page { grid-template-columns: 1fr; margin: 0; width: 100%; }
       aside { padding: 30px 24px; }
@@ -95,71 +98,54 @@
 <body>
   <div class="page">
     <aside>
-      <div class="avatar" aria-label="Chữ viết tắt BDQ">BDQ</div>
+      <!-- Avatar -->
+      <img src="avatar.png" alt="Avatar của Bùi Duy Quang" class="avatar-img">
+
       <h2 class="side-name">Bùi Duy Quang</h2>
-      <p class="side-role">Ứng viên Công nghệ thông tin</p>
+      <p class="side-role">Web Developer · Sinh viên CNTT</p>
 
       <div class="side-section">
         <h2>Thông tin liên hệ</h2>
-        <div class="contact-item"><span>Điện thoại</span>Điền số điện thoại</div>
-        <div class="contact-item"><span>Email</span>dien.email@example.com</div>
-        <div class="contact-item"><span>Địa chỉ</span>Thái Nguyên, Việt Nam</div>
-        <div class="contact-item"><span>GitHub / Portfolio</span>Thêm liên kết của bạn</div>
+        <div class="contact-item"><span>Ngày sinh</span>02/09/2003</div>
+        <div class="contact-item"><span>Giới tính</span>Nam</div>
+        <div class="contact-item"><span>Điện thoại</span>0969129XXX</div>
+        <div class="contact-item"><span>Email</span>Duyquangbui0209@gmail.com</div>
+        <div class="contact-item"><span>Địa chỉ</span>Tỉnh Lạng Sơn, Việt Nam</div>
+        <div class="contact-item"><span>GitHub / Portfolio</span><a href="https://github.com/dtc235200603-lang" target="_blank">https://github.com/dtc235200603-lang</a></div>
       </div>
 
       <div class="side-section">
-        <h2>Kỹ năng</h2>
-        <div class="skill"><div class="skill-label"><span>HTML &amp; CSS</span><span>Khá</span></div><div class="track"><div class="fill" style="width:72%"></div></div></div>
-        <div class="skill"><div class="skill-label"><span>JavaScript</span><span>Cơ bản</span></div><div class="track"><div class="fill" style="width:48%"></div></div></div>
-        <div class="skill"><div class="skill-label"><span>Cơ sở dữ liệu</span><span>Cơ bản</span></div><div class="track"><div class="fill" style="width:50%"></div></div></div>
-        <div class="skill"><div class="skill-label"><span>Git / GitHub</span><span>Cơ bản</span></div><div class="track"><div class="fill" style="width:45%"></div></div></div>
+        <h2>Kỹ năng chuyên môn</h2>
+        <div class="skill"><div class="skill-label"><span>HTML &amp; CSS</span><span>Khá</span></div><div class="track"><div class="fill" style="width:70%"></div></div></div>
+        <div class="skill"><div class="skill-label"><span>JavaScript</span><span>Trung bình</span></div><div class="track"><div class="fill" style="width:50%"></div></div></div>
+        <div class="skill"><div class="skill-label"><span>Python cơ bản</span><span>Trung bình</span></div><div class="track"><div class="fill" style="width:50%"></div></div></div>
       </div>
 
       <div class="side-section">
-        <h2>Điểm mạnh</h2>
-        <p>• Ham học hỏi, chủ động</p>
-        <p>• Có tinh thần trách nhiệm</p>
-        <p>• Làm việc nhóm và tự học</p>
-        <p>• Sẵn sàng tiếp thu góp ý</p>
+        <h2>Kỹ năng mềm</h2>
+        <p class="soft-skills">Giao tiếp, Làm việc nhóm, Quản lý thời gian, Tư duy logic & giải quyết vấn đề, Tinh thần tự học, Chủ động và có trách nhiệm, Khả năng thích nghi.</p>
       </div>
 
       <div class="side-section">
-        <h2>Ngôn ngữ</h2>
+        <h2>Ngoại ngữ</h2>
         <p>Tiếng Việt: Bản ngữ</p>
-        <p>Tiếng Anh: Điền trình độ thực tế</p>
+        <p>Tiếng Anh: TOEIC 400</p>
       </div>
     </aside>
 
     <main>
       <header class="intro">
         <div class="eyebrow">Curriculum Vitae</div>
-        <h1>Bùi Duy Quang</h1>
-        <p class="headline">Sinh viên / Ứng viên ngành Công nghệ thông tin</p>
+        <h1>BÙI DUY QUANG</h1>
+        <p class="headline">Web Developer · Sinh viên CNTT</p>
       </header>
-
-      <section>
-        <h2>Giới thiệu bản thân</h2>
-        <p class="summary">Tôi là người yêu thích công nghệ và phát triển website, có tinh thần học hỏi và mong muốn vận dụng kiến thức vào các dự án thực tế. Tôi đang trau dồi kỹ năng lập trình, tư duy giải quyết vấn đề và quy trình làm việc để phát triển chuyên môn lâu dài.</p>
-      </section>
-
-      <section>
-        <h2>Mục tiêu nghề nghiệp</h2>
-        <div class="entry">
-          <h3>Ngắn hạn</h3>
-          <p>Củng cố kiến thức HTML, CSS, JavaScript, cơ sở dữ liệu và Git; hoàn thành các dự án cá nhân có giao diện rõ ràng, hoạt động ổn định.</p>
-        </div>
-        <div class="entry">
-          <h3>Dài hạn</h3>
-          <p>Phát triển thành lập trình viên web chuyên nghiệp, có khả năng xây dựng và bảo trì sản phẩm hoàn chỉnh, đồng thời đóng góp hiệu quả cho đội ngũ.</p>
-        </div>
-      </section>
 
       <section>
         <h2>Học vấn</h2>
         <div class="entry">
-          <h3>[Tên trường / cơ sở đào tạo]</h3>
-          <div class="meta">[Chuyên ngành] · [Năm bắt đầu – năm dự kiến tốt nghiệp]</div>
-          <p>Điền các môn học, thành tích hoặc chứng chỉ liên quan nếu có.</p>
+          <h3>Trường Đại học Công nghệ Thông tin và Truyền thông – Đại học Thái Nguyên (ICTU)</h3>
+          <div class="meta">Công nghệ Thông tin</div>
+          <p>Hệ thống thông tin, lập trình mạng, cơ sở dữ liệu, phát triển ứng dụng web và di động.</p>
         </div>
       </section>
 
@@ -167,29 +153,18 @@
         <h2>Dự án tiêu biểu</h2>
         <div class="entry">
           <h3>Website bán PC và linh kiện máy tính</h3>
-          <div class="meta">Dự án cá nhân / học tập · [Thời gian thực hiện]</div>
+          <div class="meta">Dự án thực hành cá nhân / nhóm · Phát triển website · 06/2026 – 08/2026</div>
+          <p>Xây dựng website hỗ trợ người dùng tìm kiếm, xem thông tin sản phẩm máy tính và quản lý quy trình mua hàng.</p>
+          <p><strong>Công nghệ sử dụng:</strong> HTML/CSS, JavaScript, Backend, Database, Git/GitHub, Clever Cloud, Render</p>
+          <p><strong>Nhiệm vụ thực hiện:</strong></p>
           <ul>
-            <li>Xây dựng giao diện cửa hàng trực tuyến, danh sách sản phẩm và trang chi tiết sản phẩm.</li>
-            <li>Thiết kế luồng đăng nhập, phân quyền người dùng và quy trình mua hàng.</li>
-            <li>Tìm hiểu quản lý dữ liệu sản phẩm, giỏ hàng và thống kê bán hàng.</li>
-            <li>Công nghệ sử dụng: [Điền đúng công nghệ thực tế của dự án].</li>
+            <li>Phát triển chức năng hiển thị, tìm kiếm và xem chi tiết sản phẩm.</li>
+            <li>Xây dựng chức năng đăng nhập, giỏ hàng và quản lý đơn hàng.</li>
+            <li>Phát triển trang quản trị để quản lý sản phẩm và theo dõi trạng thái đơn hàng.</li>
+            <li>Kiểm thử chức năng, phát hiện và sửa lỗi trong quá trình phát triển.</li>
           </ul>
+          <p><strong>Kết quả:</strong> Hoàn thiện các chức năng trong phạm vi dự án; củng cố kiến thức phát triển website, cơ sở dữ liệu và kỹ năng giải quyết vấn đề.</p>
         </div>
-        <div class="entry">
-          <h3>[Tên dự án khác nếu có]</h3>
-          <div class="meta">[Vai trò] · [Thời gian]</div>
-          <p>Mô tả ngắn mục tiêu, phần việc bạn phụ trách và kết quả đạt được.</p>
-        </div>
-      </section>
-
-      <section>
-        <h2>Kỹ năng chuyên môn</h2>
-        <div class="tag-list">
-          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span>
-          <span class="tag">Responsive Design</span><span class="tag">Git / GitHub</span>
-          <span class="tag">SQL / Database</span><span class="tag">Debug cơ bản</span>
-        </div>
-        <p class="note">Lưu ý: Hãy chỉnh sửa các mục trong ngoặc vuông và thông tin liên hệ theo dữ liệu thực tế trước khi gửi CV.</p>
       </section>
     </main>
   </div>
